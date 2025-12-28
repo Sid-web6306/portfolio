@@ -95,7 +95,7 @@ export function About() {
                 transition={{ delay: 0.3 }}
                 className="text-center"
               >
-                <div className="text-3xl font-bold text-violet-600">15+</div>
+                <div className="text-3xl font-bold text-violet-600">5+</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Projects Delivered</div>
               </motion.div>
               <motion.div
