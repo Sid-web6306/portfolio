@@ -97,7 +97,7 @@ export const projects = [
     title: "Centric Fit",
     description:
       "A comprehensive fitness management system designed to help gyms and fitness centers manage their members, schedules, and payments efficiently. Features include member management, class scheduling, payment integration with Razorpay, and real-time analytics.",
-    image: "/centric-fit.png",
+    image: "/centric_fit.png",
     liveUrl: "https://centric.fit/",
     githubUrl: "https://github.com/Sid-web6306/GYM_SAAS",
     tags: ["Next.js", "Supabase", "Razorpay", "TypeScript", "TanStack Query", "Shadcn", "Tailwind CSS"],
@@ -107,7 +107,7 @@ export const projects = [
     title: "Sethji Industries",
     description:
       "A modern website for an electric vehicle company showcasing their range of e-rickshaws, e-loaders, and e-carts. Features include dealer locator with Google Maps integration, product catalog, and enquiry management system.",
-    image: "/sethji.png",
+    image: "/sethji_industries.png",
     liveUrl: "https://e-auto-solutions.vercel.app/",
     githubUrl: "https://github.com/Sid-web6306/E-Auto-Solutions",
     tags: ["Next.js", "Firebase", "Google Maps API", "TypeScript", "Tailwind CSS"],
@@ -117,7 +117,7 @@ export const projects = [
     title: "PoleStar Global – Podium 5",
     description:
       "Built and maintained responsive web applications for vessel tracking, sanctions monitoring, and maritime intelligence dashboards. Developed interactive map-based UIs using OpenLayers and data-heavy tables with AG Grid. Optimized real-time data visualization through efficient Vuex state management.",
-    image: "/polestar.png",
+    image: "",
     liveUrl: "#",
     githubUrl: "#",
     tags: ["Vue.js", "Vuex", "Vuetify", "Node.js", "Express.js", "PostgreSQL", "OpenLayers", "AG Grid", "REST APIs"],
@@ -127,7 +127,7 @@ export const projects = [
     title: "Dentsu – Media Advertising Platform",
     description:
       "Designed and developed Express.js REST APIs using TypeScript to support media planning, versioning, and approval workflows. Architected scalable frontend modules using React.js including scheduling interfaces and data-intensive tables with Handsontable and Bryntum Scheduler.",
-    image: "/dentsu.png",
+    image: "",
     liveUrl: "#",
     githubUrl: "#",
     tags: ["React.js", "Redux", "TypeScript", "Node.js", "Express.js", "MongoDB", "Kafka", "Handsontable"],
@@ -137,7 +137,7 @@ export const projects = [
     title: "MarketCube – Multivendor E-commerce",
     description:
       "Developed scalable backend services for multivendor workflows including vendor onboarding, product catalogs, inventory management, and order processing. Built and integrated RESTful and Apollo GraphQL APIs with MongoDB. Implemented JWT-based authentication and role-based authorization.",
-    image: "/marketcube.png",
+    image: "",
     liveUrl: "#",
     githubUrl: "#",
     tags: ["React.js", "Redux", "Node.js", "Express.js", "MongoDB", "Apollo GraphQL", "Microservices", "JWT"],

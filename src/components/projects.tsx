@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { ExternalLink, Github, ArrowRight } from "lucide-react";
+import Image from "next/image";
 import { projects } from "@/lib/data";
 
 export function Projects() {
@@ -54,29 +55,39 @@ export function Projects() {
               transition={{ delay: index * 0.2 }}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
-              className={`group relative grid lg:grid-cols-2 gap-8 items-center ${
-                index % 2 === 1 ? "lg:flex-row-reverse" : ""
-              }`}
+              className={`group relative grid lg:grid-cols-2 gap-8 items-center ${index % 2 === 1 ? "lg:flex-row-reverse" : ""
+                }`}
             >
               {/* Project Image/Preview */}
               <motion.div
                 whileHover={{ scale: 1.02 }}
-                className={`relative aspect-video rounded-2xl overflow-hidden bg-gradient-to-br from-violet-500 to-indigo-600 ${
-                  index % 2 === 1 ? "lg:order-2" : ""
-                }`}
+                className={`relative aspect-video rounded-2xl overflow-hidden bg-gradient-to-br from-violet-500 to-indigo-600 ${index % 2 === 1 ? "lg:order-2" : ""
+                  }`}
               >
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center text-white p-8">
-                    <div className="text-6xl mb-4">
-                      {project.title.includes("PoleStar") ? "🚢" : 
-                       project.title.includes("Dentsu") ? "📺" : 
-                       project.title.includes("MarketCube") ? "🛒" :
-                       project.title.includes("Centric") ? "💪" : "🛺"}
+                <div className="absolute inset-0">
+                  {project.image ? (
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover object-top"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  ) : (
+                    <div className="flex items-center justify-center h-full text-center text-white p-8">
+                      <div>
+                        <div className="text-6xl mb-4">
+                          {project.title.includes("PoleStar") ? "🚢" :
+                            project.title.includes("Dentsu") ? "📺" :
+                              project.title.includes("MarketCube") ? "🛒" :
+                                project.title.includes("Centric") ? "💪" : "🛺"}
+                        </div>
+                        <h3 className="text-2xl font-bold">{project.title}</h3>
+                      </div>
                     </div>
-                    <h3 className="text-2xl font-bold">{project.title}</h3>
-                  </div>
+                  )}
                 </div>
-                
+
                 {/* Overlay with links */}
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -125,15 +136,15 @@ export function Projects() {
                     </span>
                   )}
                 </div>
-                
+
                 <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-4 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
                   {project.description}
                 </p>
-                
+
                 {/* Tech Stack Tags */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag) => (
@@ -145,7 +156,7 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
-                
+
                 {/* Action Buttons */}
                 <div className="flex items-center gap-4">
                   {project.liveUrl !== "#" ? (
