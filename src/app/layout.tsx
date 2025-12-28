@@ -15,10 +15,15 @@ export const metadata: Metadata = {
   description: "Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies. View my portfolio and get in touch.",
   keywords: ["Full Stack Developer", "React", "Next.js", "Node.js", "TypeScript", "Portfolio"],
   authors: [{ name: "Siddhant Jain" }],
+  icons: {
+    icon: "/sj-logo.png",
+    apple: "/sj-logo.png",
+  },
   openGraph: {
     title: "Siddhant Jain | Full Stack Developer",
     description: "Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies.",
     type: "website",
+    images: ["/sj-logo.png"],
   },
 };
 
