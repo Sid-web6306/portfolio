@@ -20,13 +20,13 @@ export const skills = [
   },
   {
     name: "Vue.js",
-    icon: "💚",
+    icon: "V",
     category: "Frontend",
     level: 90,
   },
   {
     name: "Redux/Vuex",
-    icon: "�",
+    icon: "🔄",
     category: "State Management",
     level: 90,
   },
@@ -50,7 +50,7 @@ export const skills = [
   },
   {
     name: "Express.js",
-    icon: "�",
+    icon: "EX",
     category: "Backend",
     level: 90,
   },
@@ -68,7 +68,7 @@ export const skills = [
   },
   {
     name: "PostgreSQL",
-    icon: "�",
+    icon: "🐘",
     category: "Database",
     level: 85,
   },

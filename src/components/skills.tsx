@@ -56,9 +56,12 @@ export function Skills() {
             >
               {/* Glow effect on hover */}
               <div className="absolute inset-0 bg-gradient-to-r from-violet-500/0 via-violet-500/5 to-indigo-500/0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
-              
+
               <div className="relative">
-                <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">
+                <div className={`text-4xl mb-4 group-hover:scale-110 transition-transform font-bold ${skill.name === "Vue.js" ? "text-[#42b883]" :
+                    skill.name === "Redux/Vuex" ? "text-[#764abc]" :
+                      skill.name === "Express.js" ? "text-black bg-white px-1 py-1 rounded-md text-xl inline-block" : ""
+                  }`}>
                   {skill.icon}
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
@@ -67,7 +70,7 @@ export function Skills() {
                 <span className="text-xs font-medium px-2 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">
                   {skill.category}
                 </span>
-                
+
                 {/* Skill level bar */}
                 <div className="mt-4">
                   <div className="h-1.5 bg-gray-200 dark:bg-gray-800 rounded-full overflow-hidden">
@@ -98,7 +101,7 @@ export function Skills() {
             And many more tools and technologies...
           </p>
           <div className="mt-4 flex items-center justify-center gap-4 flex-wrap">
-            {["Git", "VS Code", "Figma", "Vercel", "Docker", "REST APIs"].map((tool) => (
+            {["Git", "Github", "VS Code", "Figma", "Vercel", "Docker", "REST APIs", "Cursor", "Windsurf"].map((tool) => (
               <span
                 key={tool}
                 className="px-3 py-1 text-sm bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-full"
