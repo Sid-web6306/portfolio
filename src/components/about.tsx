@@ -62,7 +62,7 @@ export function About() {
             
             <div className="space-y-4 text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
               <p>
-                I&apos;m a Full Stack Developer with <strong>4.9 years of experience</strong> building 
+                I&apos;m a Full Stack Developer leveraging AI for Productivity with <strong>5 years of experience</strong> building 
                 scalable, high-performance web applications across Maritime Intelligence, 
                 Media Advertising, and E-commerce domains.
               </p>
@@ -86,7 +86,7 @@ export function About() {
                 transition={{ delay: 0.2 }}
                 className="text-center"
               >
-                <div className="text-3xl font-bold text-violet-600">4.9+</div>
+                <div className="text-3xl font-bold text-violet-600">5</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Years Experience</div>
               </motion.div>
               <motion.div

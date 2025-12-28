@@ -7,7 +7,7 @@ export const personalInfo = {
   github: "https://github.com/Sid-web6306",
   linkedin: "https://www.linkedin.com/in/siddhant-jain-79935314b/",
   location: "Dhampur, Bijnor, Uttar Pradesh, India",
-  bio: "Full Stack Developer with 4.9 years of experience building scalable, high-performance web applications across Maritime Intelligence, Media Advertising, and E-commerce domains. Strong expertise in React.js, Vue.js, Node.js, REST and GraphQL APIs, and cloud-ready architectures.",
+  bio: "Full Stack Developer leveraging AI for Productivity with 5 years of experience building scalable, high-performance web applications across Maritime Intelligence, Media Advertising, and E-commerce domains. Strong expertise in React.js, Vue.js, Node.js, REST and GraphQL APIs, and cloud-ready architectures.",
   tagline: "Building digital experiences that matter",
 };
 
