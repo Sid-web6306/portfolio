@@ -77,7 +77,12 @@ export function Navbar() {
                 <motion.a
                   key={link.name}
                   href={link.href}
-                  onClick={() => setActiveLink(link.name)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setActiveLink(link.name);
+                    const targetId = link.href.replace("#", "");
+                    document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" });
+                  }}
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
@@ -146,9 +151,15 @@ export function Navbar() {
                     <a
                       key={link.name}
                       href={link.href}
-                      onClick={() => {
+                      onClick={(e) => {
+                        e.preventDefault();
                         setActiveLink(link.name);
                         setIsMobileMenuOpen(false);
+                        const targetId = link.href.replace("#", "");
+                        // Small delay to let menu close animation start before scrolling
+                        setTimeout(() => {
+                          document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" });
+                        }, 100);
                       }}
                       className={`block transition-colors ${link.isActive
                         ? "text-violet-600 dark:text-violet-400 font-medium"
