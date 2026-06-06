@@ -101,7 +101,7 @@ export function Skills() {
             And many more tools and technologies...
           </p>
           <div className="mt-4 flex items-center justify-center gap-4 flex-wrap">
-            {["Git", "Github", "VS Code", "Figma", "Vercel", "Docker", "REST APIs", "Cursor", "Windsurf"].map((tool) => (
+            {["Git", "GitLab", "pnpm", "VS Code", "Figma", "Vercel", "Docker", "REST APIs", "WCAG", "Cursor", "Windsurf"].map((tool) => (
               <span
                 key={tool}
                 className="px-3 py-1 text-sm bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-full"

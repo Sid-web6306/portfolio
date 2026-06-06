@@ -19,12 +19,6 @@ export const skills = [
     level: 95,
   },
   {
-    name: "Next.js",
-    icon: "▲",
-    category: "Frontend",
-    level: 92,
-  },
-  {
     name: "Vue.js",
     icon: "V",
     category: "Frontend",
@@ -85,30 +79,6 @@ export const skills = [
     level: 92,
   },
   {
-    name: "React Aria",
-    icon: "♿",
-    category: "Accessibility",
-    level: 88,
-  },
-  {
-    name: "i18next",
-    icon: "🌐",
-    category: "Internationalization",
-    level: 85,
-  },
-  {
-    name: "Vitest",
-    icon: "✅",
-    category: "Testing",
-    level: 88,
-  },
-  {
-    name: "Playwright",
-    icon: "🎭",
-    category: "Testing",
-    level: 90,
-  },
-  {
     name: "Jest",
     icon: "🃏",
     category: "Testing",
@@ -146,7 +116,7 @@ export const projects = [
   {
     title: "Zscaler – Enterprise Security Platform",
     description:
-      "Developed enterprise-scale frontend features within a large React + Next.js monorepo serving as a UI Software Engineer. Built asynchronous exports, real-time diff viewers, and paginated data management interfaces. Modernized 10+ application pages using a shared component library, implemented WCAG-compliant accessible experiences with React Aria, and contributed to the Nimbus Core design system supporting 5 enterprise products. Authored and maintained 300+ unit and end-to-end test suites using Vitest and Playwright.",
+      "Developed enterprise-scale frontend features within a large React + Next.js monorepo while serving as a UI Software Engineer at Successive Technologies. Built asynchronous exports, real-time diff viewers, and paginated data management interfaces. Modernized 10+ application pages using a shared component library, implemented WCAG-compliant accessible experiences with React Aria, and contributed to the Nimbus Core design system supporting 5 enterprise products. Authored and maintained 300+ unit and end-to-end test suites using Vitest and Playwright.",
     image: "",
     liveUrl: "#",
     githubUrl: "#",
