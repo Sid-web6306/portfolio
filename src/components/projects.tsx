@@ -77,10 +77,11 @@ export function Projects() {
                     <div className="flex items-center justify-center h-full text-center text-white p-8">
                       <div>
                         <div className="text-6xl mb-4">
-                          {project.title.includes("PoleStar") ? "🚢" :
-                            project.title.includes("Dentsu") ? "📺" :
-                              project.title.includes("MarketCube") ? "🛒" :
-                                project.title.includes("Centric") ? "💪" : "🛺"}
+                          {project.title.includes("Zscaler") ? "🛡️" :
+                            project.title.includes("PoleStar") ? "🚢" :
+                              project.title.includes("Dentsu") ? "📺" :
+                                project.title.includes("MarketCube") ? "🛒" :
+                                  project.title.includes("Centric") ? "💪" : "🛺"}
                         </div>
                         <h3 className="text-2xl font-bold">{project.title}</h3>
                       </div>

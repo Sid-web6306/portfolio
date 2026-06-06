@@ -19,12 +19,6 @@ export const skills = [
     level: 95,
   },
   {
-    name: "Next.js",
-    icon: "▲",
-    category: "Frontend",
-    level: 92,
-  },
-  {
     name: "Vue.js",
     icon: "V",
     category: "Frontend",
@@ -83,30 +77,6 @@ export const skills = [
     icon: "🎨",
     category: "Styling",
     level: 92,
-  },
-  {
-    name: "React Aria",
-    icon: "♿",
-    category: "Accessibility",
-    level: 88,
-  },
-  {
-    name: "i18next",
-    icon: "🌐",
-    category: "Internationalization",
-    level: 85,
-  },
-  {
-    name: "Vitest",
-    icon: "✅",
-    category: "Testing",
-    level: 88,
-  },
-  {
-    name: "Playwright",
-    icon: "🎭",
-    category: "Testing",
-    level: 90,
   },
   {
     name: "Jest",
